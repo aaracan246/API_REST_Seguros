@@ -31,4 +31,42 @@ class SeguroController {
 
         return ResponseEntity(s!!, HttpStatus.OK)
     }
+
+    @GetMapping("/seguros")
+    fun getAllSeguros(){
+
+    }
+
+    @GetMapping("/seguros")
+    fun postSeguro(){}
+
+    @GetMapping("/seguros/{id_seguro}")
+    fun putSeguro(){}
+
+    @GetMapping("/seguros/{id_seguro}")
+    fun deleteSeguro(){}
 }
+
+
+
+
+
+
+//Operaciones CRUD
+//GET /seguros:
+//Devuelve una lista de todos los seguros registrados.
+//
+//GET /seguros/{id}:
+//Devuelve un seguro por su identificador idSeguro. Si no existe, retorna un error 404.
+//
+//POST /seguros:
+//Crea un nuevo seguro.
+//
+//Valida los campos siguiendo las restricciones mencionadas.
+//PUT /seguros/{id}:
+//Actualiza un seguro existente identificado por idSeguro.
+//
+//Si no existe, retorna un error 404.
+//Aplica las validaciones antes de guardar los cambios.
+//DELETE /seguros/{id}:
+//Elimina un seguro identificado por idSeguro. Si no existe, retorna un error 404.
